@@ -64,6 +64,7 @@ body {
 }
 
 #nav_top ul li:hover {
+  
   text-decoration: underline;
 }
 
@@ -590,5 +591,5 @@ body {
   font-weight: bolder;
   background-color: white;
   cursor: pointer;  
-  opacity: 1.0;
+  opacity: 1;
 }
