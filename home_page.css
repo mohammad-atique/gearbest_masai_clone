@@ -64,9 +64,28 @@ body {
 }
 
 #nav_top ul li:hover {
-  
   text-decoration: underline;
 }
+
+.dropdown_app_QR {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_app_qr_content {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-top: 250px;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+ }
+ 
+ .dropdown_app_qr_content > img {
+   display: block;
+ }
+
+ .dropdown_app_QR:hover .dropdown_app_qr_content {display: block;}
 
 #nav_main {
   display: flex;
@@ -577,6 +596,11 @@ body {
   font-weight: bold;
 }
 
+.sub_category_individual_list > ul > li:hover{
+  cursor: pointer;
+  color:rgb(255,181,93);
+}
+
 .sub_category_image {
   height: 423px;
   width: 230px;
@@ -591,5 +615,9 @@ body {
   font-weight: bolder;
   background-color: white;
   cursor: pointer;  
-  opacity: 1;
+  opacity: 1 !important;
+}
+
+.gearBestLogo {
+  cursor: pointer;
 }
