@@ -864,7 +864,7 @@
 ]
 ]
   
-
+var cartArr=JSON.parse(localStorage.getItem("cartData"))||[];
 
 $('.new_items').slick({
   infinite: true,
@@ -1309,6 +1309,14 @@ displayData(merged_data_home);
             dis.append(dis1,dis2,dis3,dis4)
             document.querySelector(".mapping_card").append(dis)
             });
+}
+
+
+function addToCart(data){
+  cartArr.push(data);
+  console.log(cartArr);
+  localStorage.setItem("cartData",JSON.stringify(cartArr));
+  alert("Item Added to the Cart");
 }
 </script>
 

@@ -191,15 +191,20 @@
             display: flex;
             overflow: hidden;
         }
-        tbody>tr>td:nth-child(1)>img{
+        tbody>tr>td:nth-child(1)>div:nth-child(1){
             width: 100px;
             height: 100px;
-            margin: 5px 5px 5px 10px;
-            border: 0.1px solid rgb(209, 209, 209);
+            /* border: 1px solid red; */
+        }
+        tbody>tr>td:nth-child(1)>div:nth-child(1)>img{
+            width: 100px;
+            height: 100px;
+            margin: 0px 0px 10px 0px;
+            border: 1px solid rgb(209, 209, 209);
             
         }
         tbody>tr>td:nth-child(1)>div>p{
-            margin: 5px 60px 10px 5px;
+            margin: 5px 60px 10px 10px;
             overflow: hidden;
             color: black;
             line-height: 140%;
@@ -324,7 +329,7 @@
                         </tr>
                </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td><img src="https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2021/03/17/goods_thumb_220-v1/20210317121546_6051827230125.jpg" alt="">
                         <div><p>Gocomma 990 Miles HD Digital HDTV TV Antenna with Amplifier DVB-T2 Mini 4K Indoor Satellite Antenna - Black</p></div></td>
                         <td class="unitPrice"><p>9</p></td>
@@ -338,7 +343,7 @@
 
                         <td class="subtotal"><p></p></td>
                         <td><button>delete</button></td>
-                    </tr>
+                    </tr> -->
 
                     <!-- <tr>
                         <td><img src="https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2021/03/17/goods_thumb_220-v1/20210317121546_6051827230125.jpg" alt="">
@@ -384,9 +389,89 @@
 </html>
 
 <script>
+
+var cartArr=JSON.parse(localStorage.getItem("cartData"))
+
+
+
+cartArr.map(display)
+    function display(data){
+        var tr=document.createElement("tr");
+
+        var td1=document.createElement("td");
+
+        var divv=document.createElement("div");
+
+        var img=document.createElement("img");
+        img.setAttribute("src",data.img);
+
+        divv.append(img)
+
+        var div=document.createElement("div");
+        var p=document.createElement("p");
+        p.textContent=data.name;
+
+        div.append(p)
+
+        td1.append(divv,div);
+
+        var td2=document.createElement("td");
+        td2.setAttribute("class", "unitPrice");
+
+        var p1=document.createElement("p");
+        p1.textContent=data.price;
+
+        td2.append(p1);
+
+        var td3=document.createElement("td");
+        var div1=document.createElement("div");
+        var btn1=document.createElement("button");
+        btn1.setAttribute("class","counter-minus");
+        btn1.addEventListener("click", decreament);
+        
+        btn1.textContent="-";
+
+        var p2=document.createElement("p");
+        p2.setAttribute("class", "counter-display");
+        p2.textContent="1";
+
+        var btn2=document.createElement("button");
+        btn2.setAttribute("class", "counter-plus");
+        btn2.addEventListener("click", increament);
+        btn2.textContent="+";
+        
+
+        div1.append(btn1,p2,btn2);
+
+        td3.append(div1);
+
+        var td4=document.createElement("td");
+        td4.setAttribute("class","subtotal");
+        var p3=document.createElement("p");
+        p3.textContent="";
+
+        td4.append(p3);
+
+        var td5=document.createElement("td");
+        var btn3=document.createElement("button");
+        btn3.textContent="delete";
+        td5.append(btn3);
+
+        tr.append(td1,td2,td3,td4,td5);
+        document.querySelector("tbody").append(tr)
+
+
+        // updateDisplay();
+    }
+
+
+
+
+
+
     
     var isLogInData = JSON.parse(localStorage.getItem("loggedInUserDataBase")) || [];
-    console.log(isLogInData)
+    // console.log(isLogInData)
 
     var cartArr=JSON.parse(localStorage.getItem("cartItem"))
     console.log(cartArr)
@@ -405,7 +490,8 @@
         
     }
 
-    let counterDisplayElem = document.querySelector('.counter-display');
+    
+        let counterDisplayElem = document.querySelector('.counter-display');
 let counterMinusElem = document.querySelector('.counter-minus');
 let counterPlusElem = document.querySelector('.counter-plus');
 
@@ -414,19 +500,20 @@ var unitPrice=document.querySelector(".unitPrice").textContent;
 let count = 1;
 
 updateDisplay();
+// console.log(updateDisplay)
 
-counterPlusElem.addEventListener("click",function() {
+function increament() {
     count++;
     updateDisplay();
-}) ;
+}
 
-counterMinusElem.addEventListener("click", function (){
+function decreament(){
     if(count==1){
         return 0
     }
     count--;
     updateDisplay();
-});
+}
 
 function updateDisplay(){
     counterDisplayElem.innerHTML = count;
@@ -441,11 +528,12 @@ function subTotal(count){
 
     return +(subtotal)
 }
+   
 
-var deleteitem=document.querySelector("tbody>tr>td:nth-child(5)>button").addEventListener("click", deleteitem)
+// var deleteitem=document.querySelector("tbody>tr>td:nth-child(5)>button").addEventListener("click", deleteitem)
 
-function deleteitem(){
+// function deleteitem(){
     
-}
+// }
 
 </script>
