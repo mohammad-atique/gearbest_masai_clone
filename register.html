@@ -229,6 +229,12 @@
         var mobile=document.querySelector("#mobile").value;
         var checkbox=document.querySelector("#checkbox");
 
+        for(let i = 0; i < userArr.length; i++) {
+            if(userArr[i].useremail == email) {   
+                return alert("Account already exists for this Email ID");
+            }
+        }
+
         var userData={
                         username: name,
                         useremail: email,

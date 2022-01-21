@@ -83,11 +83,16 @@
             <li>Gearbest Promotion</li>
           </ul>
         </div>
-        <div class="category_hover_pop_up hidden"></div>
+        <div class="category_hover_pop_up hidden">
+          <div class="sub_category_list_items">
+            
+          </div>
+          <div class="sub_category_image"></div>
+        </div>
         <div class="animated_part_big"><img src="https://uidesign.gbtcdn.com/GB/image/9102/PC+Banner+1190X420+EN.jpg?imbypass=true" alt=""><img src="https://uidesign.gbtcdn.com/GB/image/8823/1190x420a.jpg?imbypass=true" alt=""><img src="https://uidesign.gbtcdn.com/GB/image/8640/2.jpg?imbypass=true" alt=""><img src="https://uidesign.gbtcdn.com/GB/image/8640/5.jpg" alt=""><img src="https://uidesign.gbtcdn.com/GB/image/8640/9.jpg" alt=""></div>
       </div>
       <div class="static_main_part">
-        <div class="static_part1"><img src="https://uidesign.gbtcdn.com/GB/image/8640/10.jpg" alt=""></div>
+        <div class="static_part1"><div class="hid_box"></div></div>
         <div class="static_part2">
           <img src="https://uidesign.gbtcdn.com/GB/image/8640/10.jpg" alt=""><img src="https://uidesign.gbtcdn.com/GB/image/8640/6.jpg" alt=""><img src="https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg?imbypass=true" alt=""><img src="https://uidesign.gbtcdn.com/GB/image/6874/230x120b_en.jpg" alt="">
         </div>
@@ -173,7 +178,690 @@
 
 <script>
 
+  let sub_category_photos = [
+    "https://uidesign.gbtcdn.com/GB/image/7128/en-230x420.jpg?imbypass=true", "https://uidesign.gbtcdn.com/GB/image/6074/230x420.jpg?imbypass=true", "https://uidesign.gbtcdn.com/GB/image/6699/230x420_en.jpg", "https://uidesign.gbtcdn.com/GB/image/6592/en-230x420.jpg", "https://uidesign.gbtcdn.com/GB/image/6507/en-230x420.jpg", "https://uidesign.gbtcdn.com/GB/image/7049/en-230x420.jpg", "https://uidesign.gbtcdn.com/GB/image/3772/en_230x420.jpg?imbypass=true", "https://uidesign.gbtcdn.com/GB/image/5569/230x420.jpg?imbypass=true", "https://uidesign.gbtcdn.com/GB/image/5805/230x420.jpg", "https://uidesign.gbtcdn.com/GB/image/5831/en_230x420.jpg", "https://uidesign.gbtcdn.com/GB/image/5779/en.jpg?imbypass=true", "https://uidesign.gbtcdn.com/GB/image/5189/en_230x420.jpg?imbypass=true", "https://uidesign.gbtcdn.com/GB/image/5788/230x420.jpg", "https://uidesign.gbtcdn.com/GB/image/4048/en_230x420-2.jpg?imbypass=true"
+  ]
+
+  let sub_category_array = [
+  [
+[
+"Smart Electronics",
+"Smart Watches",
+"Smart Watch Phone",
+"Smart Wristband",
+"Smart Watch Accessories",
+"Sport Watch",
+"Smart Health Watch"],
+
+["Security & Protection",
+"Access Control",
+"Alarm Systems",
+"Door Intercom",
+"IP Cameras",
+"Smart Doorbells",
+"Surveillance Camera System"],
+ 
+["Headphones & Earphones",
+"Bluetooth Headphones",
+"Earbud Headphones",
+"Gaming Headphones",
+"On-Ear & Over-Ear Headphones",
+"Sports & Fitness Headphones",
+"Headphone Accessories"],
+
+["Xiaomi Ecosystem Products",
+"Xiaomi",
+"Amazfit",
+"Aqara",
+"Haylou",
+"QCY"],
+ 
+["Hot Brands",
+"Kospet",
+"Lenovo",
+"CORN",
+"KZ",
+"Ticwatch",
+"Gocomma"],
+
+["Other Consumer Electronics",
+"Smart Home",
+"Action Cameras & DV Accessories",
+"Gimbal",
+"Video Game",
+"Speakers",
+"Microphone"]
+],
+
+[
+
+[
+"3D Printer & Supplies",
+"3D Printers, 3D Printer Kits",
+"3D Printer Filament",
+"3D Scanners",
+"3D Printer Parts",
+"3D Printing Pen",
+"3D Printer Module Board"],
+
+["Power Tools",
+"Measurement & Analysis",
+"Arduino & SCM Supplies",
+"Electric Screwdriver",
+"Power Drill",
+"Glue Gun"],
+ 
+["Laser Engraver & CNC",
+"Laser Engraving Machine",
+"Laser Module",
+"Laser Accessories",
+"Professional Tools",
+"Laser Rangefinder"],
+
+["Electrical Equipments & Supplies",
+"Drill",
+"Magnifiers",
+"Telescope",
+"Cutting Tools"],
+ 
+["Testers & Detectors",
+"Microscopes & Endoscope",
+"Electronic Distance Meter",
+"Multimeters & Fitting",
+"Soldering Supplies",
+"Ultrasonic Cleaner",
+"Measuring ruler"],
+
+["Hot Brands",
+"Creality",
+"Alfawise",
+"Artillery",
+"Ortur",
+"Anycubic",
+"QIDI"
+]
+],
+[
+["TOP Brands",
+"Xiaomi",
+"Oneplus",
+"Samsung",
+"Huawei",
+"Asus",
+"Oppo"],
+
+["HOT Brands",
+"Lenovo",
+"DOOGEE",
+"Cubot",
+"Ulefone",
+"Oukitel",
+"Elephone"],
+ 
+["Cell Phone Accessories",
+"Cases & Covers",
+"Screen Protectors",
+"Chargers & Power Adapters",
+"Cables",
+"Stands & Holders",
+"Airpods Accessories"],
+
+["Smartphones",
+"Waterproof phones",
+"Dual sim phones",
+"5G phones",
+"Featured phones",
+"Refurbished phones"],
+ 
+["Main Features",
+"6GB RAM Mobile",
+"8GB RAM Mobile",
+"NFC Phones",
+"Full screen Phones",
+"Snapdragon 855"],
+
+["Hot Cases & Covers",
+"Cases For Xiaomi",
+"Cases For OnePlus",
+"Cases For Apple",
+"Cases For Samsung",
+"Cases For Huawei",
+"Cases For ASUS"]
+],
+
+[
+["Vacuums & Floor Care",
+"Vacuum Cleaners",
+"Upright Vacuums",
+"Steam Cleaners",
+"Robotic Window Cleaner",
+"Robotic Vacuum Accessories"],
+
+["Air Conditioning Appliances",
+"Air Purifiers",
+"Humidifiers",
+"Dehumidifiers",
+"Air Cooler Fan",
+"Electric Heaters"],
+ 
+[
+"Kitchen Appliances",
+"Electric Kettles",
+"Cooker & Steamer",
+"Blender & Mixer",
+"Vacuum Food Sealers",
+"Cooking Appliances",
+"Coffee Makers"],
+
+["Hot Brands",
+"Alfawise",
+"360",
+"Roborock",
+"VIOMI",
+"Mijia"],
+ 
+["Smart Home System",
+"Power Strips",
+"Smart Plug",
+"Doorbells",
+"Smart Remote Control"],
+
+["Household Appliances",
+"Mosquito Killer Lamps",
+"Soap Dispensers",
+"Laundry Appliances",
+"Home Appliances Accessories"]
+],
+
+[
+["Scooters and Wheels",
+"Electric scooters",
+"Kick Scooter",
+"Skiing & Snowboarding",
+"Scooters Accessories",
+"Roller skating",
+"Balancing Scooter"],
+
+["Cycling",
+"Electric Bikes",
+"Bike Lights",
+"Bike Tools",
+"Bike Computers",
+"Bike Helmets",
+"Bike Accessories"],
+ 
+["Hot Brands",
+"WalkingPad",
+"GUB",
+"ROCKBROS",
+"ENGWE",
+"HIMO",
+"SAMEBIKE"],
+
+["Exercise",
+"Featured Sports Products",
+"Large Fitness Equipment",
+"Fitness & Body Building",
+"Yoga Accessories",
+"Sports Protective Gear",
+"Boxing"],
+ 
+["Fishing & Hunting",
+"Fishing Baits and Hooks",
+"Fishing Lines",
+"Fishing Reels and Rods",
+"Fishing Tools and Accessories",
+"Gun Scopes and Sights",
+"Other Accessories"],
+
+["Camping / Hiking",
+"Binoculars and Telescopes",
+"Survival",
+"Carabiner",
+"Camp Kitchen",
+"Outdoor Lanterns",
+"Compass"]
+],
+[
+["Computers & Tablets",
+"Laptops",
+"Tablet PCs",
+"MINI PC",
+"All-In-One Computers",
+"Tablet Accessories",
+"Laptop Accessories"],
+
+["Computer Peripherals",
+"Memory Cards",
+"Mouse",
+"Air Mouse",
+"Keyboards",
+"Graphics Tablets",
+"Network Devices"],
+ 
+["Computer Components",
+"HDD & SSD",
+"HDD Enclosure",
+"CPU Cooler",
+"Motherboards",
+"Graphics & Video Cards",
+"Monitors"],
+
+["TV Box",
+"Beelink",
+"Mecool",
+"Magicsee",
+"Tanix",
+"A95X",
+"Alfawise"],
+ 
+["Office Supply",
+"Projectors",
+"Projector Accessories",
+"Pen & Pencils",
+"Printers",
+"Desk Organizers",
+"Notebooks & Pads"],
+
+["Hot Brands",
+"Teclast",
+"Chuwi",
+"Motospeed",
+"KUU",
+"Fengmi",
+"MIJIA"]
+],
+
+[["RC Drones & Vehicles",
+"RC Quadcopters",
+"Brushless FPV Racer",
+"RC Cars",
+"RC Airplanes",
+"RC Helicopters",
+"RC Boats"],
+
+["RC Parts",
+"Multi Rotor Parts",
+"FPV System",
+"RC Quadcopters Parts",
+"RC Cars Parts",
+"RC Airplanes Parts",
+"RC Helicopters Parts"],
+ 
+["Puzzle & Educational",
+"Block Toys",
+"Science & Discovery Toys",
+"Model & Building Toys",
+"Doll House",
+"Logic & Puzzle Toys",
+"Other Educational Toys"],
+
+["Novelty & Gag Toys",
+"Novelty Toys",
+"Classic Toys",
+"Magic Tricks",
+"Movies & TV Action Figures",
+"Key Chains",
+"Stuffed Cartoon Toys"],
+
+["Brands",
+"FIMI",
+"Hubsan",
+"JJRC",
+"Emax",
+"Populele",
+"CADA"],
+
+["More to love",
+"Guitar",
+"Guitar Parts",
+"Keyboard Instruments",
+"Baby Stroller",
+"Other Daily Care",
+"Baby Safety"]
+],
+
+[
+[
+"Smart Electronics",
+"Smart Watches",
+"Smart Watch Phone",
+"Smart Wristband",
+"Smart Watch Accessories",
+"Sport Watch",
+"Smart Health Watch"],
+
+["Security & Protection",
+"Access Control",
+"Alarm Systems",
+"Door Intercom",
+"IP Cameras",
+"Smart Doorbells",
+"Surveillance Camera System"],
+ 
+["Headphones & Earphones",
+"Bluetooth Headphones",
+"Earbud Headphones",
+"Gaming Headphones",
+"On-Ear & Over-Ear Headphones",
+"Sports & Fitness Headphones",
+"Headphone Accessories"],
+
+["Xiaomi Ecosystem Products",
+"Xiaomi",
+"Amazfit",
+"Aqara",
+"Haylou",
+"QCY"],
+ 
+["Hot Brands",
+"Kospet",
+"Lenovo",
+"CORN",
+"KZ",
+"Ticwatch",
+"Gocomma"],
+
+["Other Consumer Electronics",
+"Smart Home",
+"Action Cameras & DV Accessories",
+"Gimbal",
+"Video Game",
+"Speakers",
+"Microphone"]
+],
+
+[
+
+[
+"3D Printer & Supplies",
+"3D Printers, 3D Printer Kits",
+"3D Printer Filament",
+"3D Scanners",
+"3D Printer Parts",
+"3D Printing Pen",
+"3D Printer Module Board"],
+
+["Power Tools",
+"Measurement & Analysis",
+"Arduino & SCM Supplies",
+"Electric Screwdriver",
+"Power Drill",
+"Glue Gun"],
+ 
+["Laser Engraver & CNC",
+"Laser Engraving Machine",
+"Laser Module",
+"Laser Accessories",
+"Professional Tools",
+"Laser Rangefinder"],
+
+["Electrical Equipments & Supplies",
+"Drill",
+"Magnifiers",
+"Telescope",
+"Cutting Tools"],
+ 
+["Testers & Detectors",
+"Microscopes & Endoscope",
+"Electronic Distance Meter",
+"Multimeters & Fitting",
+"Soldering Supplies",
+"Ultrasonic Cleaner",
+"Measuring ruler"],
+
+["Hot Brands",
+"Creality",
+"Alfawise",
+"Artillery",
+"Ortur",
+"Anycubic",
+"QIDI"
+]
+],
+[
+["TOP Brands",
+"Xiaomi",
+"Oneplus",
+"Samsung",
+"Huawei",
+"Asus",
+"Oppo"],
+
+["HOT Brands",
+"Lenovo",
+"DOOGEE",
+"Cubot",
+"Ulefone",
+"Oukitel",
+"Elephone"],
+ 
+["Cell Phone Accessories",
+"Cases & Covers",
+"Screen Protectors",
+"Chargers & Power Adapters",
+"Cables",
+"Stands & Holders",
+"Airpods Accessories"],
+
+["Smartphones",
+"Waterproof phones",
+"Dual sim phones",
+"5G phones",
+"Featured phones",
+"Refurbished phones"],
+ 
+["Main Features",
+"6GB RAM Mobile",
+"8GB RAM Mobile",
+"NFC Phones",
+"Full screen Phones",
+"Snapdragon 855"],
+
+["Hot Cases & Covers",
+"Cases For Xiaomi",
+"Cases For OnePlus",
+"Cases For Apple",
+"Cases For Samsung",
+"Cases For Huawei",
+"Cases For ASUS"]
+],
+
+[
+["Vacuums & Floor Care",
+"Vacuum Cleaners",
+"Upright Vacuums",
+"Steam Cleaners",
+"Robotic Window Cleaner",
+"Robotic Vacuum Accessories"],
+
+["Air Conditioning Appliances",
+"Air Purifiers",
+"Humidifiers",
+"Dehumidifiers",
+"Air Cooler Fan",
+"Electric Heaters"],
+ 
+[
+"Kitchen Appliances",
+"Electric Kettles",
+"Cooker & Steamer",
+"Blender & Mixer",
+"Vacuum Food Sealers",
+"Cooking Appliances",
+"Coffee Makers"],
+
+["Hot Brands",
+"Alfawise",
+"360",
+"Roborock",
+"VIOMI",
+"Mijia"],
+ 
+["Smart Home System",
+"Power Strips",
+"Smart Plug",
+"Doorbells",
+"Smart Remote Control"],
+
+["Household Appliances",
+"Mosquito Killer Lamps",
+"Soap Dispensers",
+"Laundry Appliances",
+"Home Appliances Accessories"]
+],
+
+[
+["Scooters and Wheels",
+"Electric scooters",
+"Kick Scooter",
+"Skiing & Snowboarding",
+"Scooters Accessories",
+"Roller skating",
+"Balancing Scooter"],
+
+["Cycling",
+"Electric Bikes",
+"Bike Lights",
+"Bike Tools",
+"Bike Computers",
+"Bike Helmets",
+"Bike Accessories"],
+ 
+["Hot Brands",
+"WalkingPad",
+"GUB",
+"ROCKBROS",
+"ENGWE",
+"HIMO",
+"SAMEBIKE"],
+
+["Exercise",
+"Featured Sports Products",
+"Large Fitness Equipment",
+"Fitness & Body Building",
+"Yoga Accessories",
+"Sports Protective Gear",
+"Boxing"],
+ 
+["Fishing & Hunting",
+"Fishing Baits and Hooks",
+"Fishing Lines",
+"Fishing Reels and Rods",
+"Fishing Tools and Accessories",
+"Gun Scopes and Sights",
+"Other Accessories"],
+
+["Camping / Hiking",
+"Binoculars and Telescopes",
+"Survival",
+"Carabiner",
+"Camp Kitchen",
+"Outdoor Lanterns",
+"Compass"]
+],
+[
+["Computers & Tablets",
+"Laptops",
+"Tablet PCs",
+"MINI PC",
+"All-In-One Computers",
+"Tablet Accessories",
+"Laptop Accessories"],
+
+["Computer Peripherals",
+"Memory Cards",
+"Mouse",
+"Air Mouse",
+"Keyboards",
+"Graphics Tablets",
+"Network Devices"],
+ 
+["Computer Components",
+"HDD & SSD",
+"HDD Enclosure",
+"CPU Cooler",
+"Motherboards",
+"Graphics & Video Cards",
+"Monitors"],
+
+["TV Box",
+"Beelink",
+"Mecool",
+"Magicsee",
+"Tanix",
+"A95X",
+"Alfawise"],
+ 
+["Office Supply",
+"Projectors",
+"Projector Accessories",
+"Pen & Pencils",
+"Printers",
+"Desk Organizers",
+"Notebooks & Pads"],
+
+["Hot Brands",
+"Teclast",
+"Chuwi",
+"Motospeed",
+"KUU",
+"Fengmi",
+"MIJIA"]
+],
+
+[["RC Drones & Vehicles",
+"RC Quadcopters",
+"Brushless FPV Racer",
+"RC Cars",
+"RC Airplanes",
+"RC Helicopters",
+"RC Boats"],
+
+["RC Parts",
+"Multi Rotor Parts",
+"FPV System",
+"RC Quadcopters Parts",
+"RC Cars Parts",
+"RC Airplanes Parts",
+"RC Helicopters Parts"],
+ 
+["Puzzle & Educational",
+"Block Toys",
+"Science & Discovery Toys",
+"Model & Building Toys",
+"Doll House",
+"Logic & Puzzle Toys",
+"Other Educational Toys"],
+
+["Novelty & Gag Toys",
+"Novelty Toys",
+"Classic Toys",
+"Magic Tricks",
+"Movies & TV Action Figures",
+"Key Chains",
+"Stuffed Cartoon Toys"],
+
+["Brands",
+"FIMI",
+"Hubsan",
+"JJRC",
+"Emax",
+"Populele",
+"CADA"],
+
+["More to love",
+"Guitar",
+"Guitar Parts",
+"Keyboard Instruments",
+"Baby Stroller",
+"Other Daily Care",
+"Baby Safety"]
+]
+]
+console.log(sub_category_photos);
   
+
 
 $('.new_items').slick({
   infinite: true,
@@ -193,72 +881,141 @@ $('.new_items').slick({
   autoplay: true,
 });
 
+//ARRAY AND PHOTO FOR SUB_CATEGORY_POPUP
+//THIS IS A WORKAROUND > I am saving the content i.e. UL and the image on the sub category page on every instance of hover on a category. On each hover the content stored is changed and printed on the hidden box
+
+let sub_category_temp_array = [];
+let sub_category_temp_image = "";
+
 for(let i = 0; i < document.querySelectorAll(".category_selector ul li").length; i++) {
+  //appending the photo
   document.querySelectorAll(".category_selector ul li")[i].addEventListener('mouseover', function() {
-  document.querySelector('.category_hover_pop_up').classList.remove("hidden");
+    let img = document.createElement("img");
+  img.setAttribute("src", sub_category_photos[i]);
+  document.querySelector('.sub_category_image').append(img);
+  document.querySelector('.category_hover_pop_up').classList.remove("hidden")
+  sub_category_temp_array = sub_category_array[i];
+  sub_category_temp_image = sub_category_photos[i];
+    
+    for(let m = 0; m < 6; m++) {
+      let currentBox = document.createElement("div");
+      currentBox.setAttribute("class", "sub_category_individual_list");
 
+      let ul = document.createElement("ul");
 
-  document.querySelectorAll(".category_selector ul li")[i].addEventListener('mouseleave', function() {
-  document.querySelector('.category_hover_pop_up').classList.add("hidden");
+      for(let j = 0; j < sub_category_array[i][m].length; j++) {
+        let li = document.createElement("li");
+        li.textContent = sub_category_array[i][m][j];
+        ul.append(li);
+      }
+      currentBox.append(ul);
+      document.querySelector(".sub_category_list_items").append(currentBox);
+      
+    }
 })
+
+//EMPTIER FUNCTION
+  document.querySelectorAll(".category_selector ul li")[i].addEventListener('mouseleave', function() {
+    document.querySelector('.sub_category_image').innerHTML = "";
+    document.querySelector(".sub_category_list_items").innerHTML = "";
+  document.querySelector('.category_hover_pop_up').classList.add("hidden");
 })
 }
 
+//PART 2 (MAKE IT WORK LATER)
 
 document.querySelector(".category_hover_pop_up").addEventListener('mouseover', function() {
+  if(document.querySelectorAll(".sub_category_individual_list").length) {
+    return console.log("ADD NO MORE");
+  }
+  // console.log(document.querySelectorAll(".sub_category_image").length)
+  let img = document.createElement("img");
+  img.setAttribute("src", sub_category_temp_image);
+  document.querySelector('.sub_category_image').append(img);
+
+  
+
+  for(let m = 0; m < 6; m++) {
+      let currentBox = document.createElement("div");
+      currentBox.setAttribute("class", "sub_category_individual_list");
+
+      let ul = document.createElement("ul");
+
+      for(let j = 0; j < sub_category_temp_array[m].length; j++) {
+        let li = document.createElement("li");
+        li.textContent = sub_category_temp_array[m][j];
+        ul.append(li);
+      }
+      currentBox.append(ul);
+      document.querySelector(".sub_category_list_items").append(currentBox);
+    }
   document.querySelector('.category_hover_pop_up').classList.remove("hidden");
 })
 
 document.querySelector(".category_hover_pop_up").addEventListener('mouseleave', function() {
+  document.querySelector(".sub_category_list_items").innerHTML = "";
+  document.querySelector('.sub_category_image').innerHTML = "";
+  // document.querySelector('.sub_category_image').innerHTML = "";
+  //   for(let x = 0; x < 6; x++) {
+  //     let currentBox = document.querySelectorAll(".sub_category_individual_list")[x];
+  //     currentBox.innerHTML = "";
+  //   }
   document.querySelector('.category_hover_pop_up').classList.add("hidden");
 })
+
+
 
 
 </script>
 
 
 //
-Smart Electronics
-Smart Watches
-Smart Watch Phone
-Smart Wristband
-Smart Watch Accessories
-Sport Watch
-Smart Health Watch
+[
 
-Security & Protection
-Access Control
-Alarm Systems
-Door Intercom
-IP Cameras
-Smart Doorbells
-Surveillance Camera System
+[
+"3D Printer & Supplies",
+"3D Printers, 3D Printer Kits",
+"3D Printer Filament",
+"3D Scanners",
+"3D Printer Parts",
+"3D Printing Pen",
+"3D Printer Module Board"],
+
+["Power Tools",
+"Measurement & Analysis",
+"Arduino & SCM Supplies",
+"Electric Screwdriver",
+"Power Drill",
+"Glue Gun"],
  
-Headphones & Earphones
-Bluetooth Headphones
-Earbud Headphones
-Gaming Headphones
-On-Ear & Over-Ear Headphones
-Sports & Fitness Headphones
-Headphone Accessories
-Xiaomi Ecosystem Products
-Xiaomi
-Amazfit
-Aqara
-Haylou
-QCY
+["Laser Engraver & CNC",
+"Laser Engraving Machine",
+"Laser Module",
+"Laser Accessories",
+"Professional Tools",
+"Laser Rangefinder"],
+
+["Electrical Equipments & Supplies",
+"Drill",
+"Magnifiers",
+"Telescope",
+"Cutting Tools"],
  
-Hot Brands
-Kospet
-Lenovo
-CORN
-KZ
-Ticwatch
-Gocomma
-Other Consumer Electronics
-Smart Home
-Action Cameras & DV Accessories
-Gimbal
-Video Game
-Speakers
-Microphone
+["Testers & Detectors",
+"Microscopes & Endoscope",
+"Electronic Distance Meter",
+"Multimeters & Fitting",
+"Soldering Supplies",
+"Ultrasonic Cleaner",
+"Measuring ruler"],
+
+["Hot Brands",
+"Creality",
+"Alfawise",
+"Artillery",
+"Ortur",
+"Anycubic",
+"QIDI"
+]
+
+]
