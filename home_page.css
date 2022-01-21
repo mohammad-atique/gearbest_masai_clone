@@ -13,6 +13,11 @@ body {
   height: 100px;
 }
 
+.gearBestLogo {
+  cursor: pointer;
+}
+
+
 #nav_top {
   align-items: center;
   justify-content: right;
@@ -614,6 +619,3 @@ body {
   opacity: 1 !important;
 }
 
-.gearBestLogo {
-  cursor: pointer;
-}
