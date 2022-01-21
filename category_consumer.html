@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="gearBestIcon.jpg" type="image/icon type" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Oswald:wght@300..700&display=swap" rel="stylesheet">
     
 
-    <title>Document</title>
+    <title>Consumer Electronics - Best Consumer Electronics Online shopping | Gearbest.com</title>
     
     <style>
 
@@ -393,6 +394,11 @@
              height : 700px; */
              
          }
+
+         .sSbox3 > div {
+            max-height: 390px;
+        }
+
         .sSbox3>div:hover{
             /* border:1px solid red; */
             /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
@@ -518,8 +524,6 @@
         #picdiv{
             height:57%;
             /* width:10%; */
-           
-
         }
         #ip{
             width:220px;
@@ -540,7 +544,14 @@
             justify-content: space-between;
             height : 45px;
         }
+
+        .sSbox3 > div:hover > #cartdiv > #addcart{
+  display: block;
+  border: 1px solid red;
+  /* display: inline-block; */
+}
         #addcart{
+            display: none;
             height:35px;
             background-color:#f30240;
             color:white;
@@ -1120,7 +1131,9 @@
              price:9,
              img:"https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2021/03/17/goods_thumb_220-v1/20210317121546_6051827230125.jpg" },
             ]
+
     var cartArr=JSON.parse(localStorage.getItem("cartItem"))||[];
+
     displayData(appliancesdata);
     function displayData(appliancesdata) {
         document.querySelector(".sSbox3").innerHTML = "";
