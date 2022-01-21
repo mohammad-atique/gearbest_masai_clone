@@ -12,16 +12,234 @@
     <title>Document</title>
     
     <style>
+
+        body {
+            font-family: sans-serif;
+        }
+
+#nav_bar {
+  display: flex;
+  margin: auto;
+  width: 1200px;
+  height: 100px;
+}
+
+.gearBestLogo {
+  cursor: pointer;
+}
+
+
+#nav_top {
+  align-items: center;
+  justify-content: right;
+  display: flex;
+  margin: none;
+  padding-top: 10px;
+  height: 26px;
+  width: 970px;
+  font-size: 13px;
+}
+
+#nav_top ul li:nth-child(1):before {
+  font-family: IcoFont;
+  font-size: 18px;
+  content: "\efec";
+}
+
+#nav_top ul li:nth-child(1)::after,
+#nav_top ul li:nth-child(3)::after,
+#nav_top ul li:nth-child(4)::after,
+#nav_top ul li:nth-child(5)::after,
+.nav_search_category_select::after {
+  margin-left: 4px;
+  font-family: IcoFont;
+  content: "\ea99";
+  font-size: 16px;
+}
+
+#nav_top ul li:nth-child(1):hover:after,
+#nav_top ul li:nth-child(5):hover:after {
+  font-family: IcoFont;
+  content: "\eaa1";
+  font-size: 16px;
+}
+
+#nav_top ul {
+  display: flex;
+  list-style-type: none;
+  color: #666;
+}
+
+#nav_top ul li {
+  align-items: center;
+  display: flex;
+  text-align: left;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#nav_top ul li:hover {
+  text-decoration: underline;
+}
+
+.dropdown_app_QR {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_app_qr_content {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 250px;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown_app_qr_content > img {
+  display: block;
+}
+
+.dropdown_app_QR:hover .dropdown_app_qr_content {
+  display: block;
+}
+
+#nav_main {
+  display: flex;
+  flex-direction: row;
+  margin: none;
+  padding: 14px 0px 0px 0px;
+  height: 50px;
+  width: 970px;
+}
+
+.nav_search_bar {
+  display: flex;
+  font-size: 14px;
+  margin-left: 150px;
+  height: 32px;
+  border: 2px solid #ffda00;
+  border-radius: 100px;
+  text-align: left;
+  width: 480px;
+}
+
+.nav_search_category_select {
+  margin: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#nav_search_input {
+  border: none;
+  margin-right: 60px;
+  width: 356px;
+  height: 26px;
+  padding: 3px 0px;
+}
+
+.nav_search_button {
+  border-radius: 0px 10px 10px 0px;
+  align-self: right;
+  cursor: pointer;
+  width: 42px;
+  border: 0;
+  background-color: #ffda00;
+}
+
+.nav_search_button:before {
+  font-family: IcoFont;
+  font-size: 18px;
+  content: "\ed11";
+}
+
+.nav_bar_options {
+  margin-top: 5px;
+  color: #666;
+  justify-content: right;
+  align-items: center;
+  display: flex;
+  font-size: 15px;
+  width: 319px;
+  height: 28px;
+}
+
+.nav_bar_options > div {
+  margin-left: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav_sign_in {
+  text-align: left;
+}
+
+.nav_sign_in:before {
+  margin-right: 5px;
+  font-size: 22px;
+  content: "\ecec    ";
+  font-family: IcoFont;
+}
+
+.nav_sign_in:hover:before {
+  color: #ffda00;
+}
+
+.nav_favorites:before {
+  margin-right: 5px;
+  font-size: 20px;
+  font-family: IcoFont;
+  content: "\ef44   ";
+}
+
+.nav_favorites:hover:before {
+  color: #ffda00;
+}
+
+.nav_cart:before {
+  font-size: 24px;
+  margin-right: 5px;
+  content: "\efe7";
+  font-family: IcoFont;
+}
+
+.nav_cart:hover:before {
+  color: #ffda00;
+}
+
+#nav_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 970px;
+}
+
+#nav_logo_container {
+  display: flex;
+  width: 230px;
+  height: 100%;
+}
+
+.gearBestLogo {
+  max-width: 100%;
+  max-height: 100px;
+  margin: 25px 0px;
+}
+
+.countryFlag {
+  height: 13px;
+  width: 22px;
+  margin: 0px 4px;
+}
+
         #container{
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+            width: 1200px;
+            margin: auto;
         }
         /* 1st BOX */
-        .box1{
-            width : 100%;
-            height : 80px;
-            /* border:1px solid red; */
-            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-        }
+        
         /* 2nd BOX */
         #box2 {
             display : flex;
@@ -31,7 +249,10 @@
             font-weight: bold;
             font-size : 20px;
             padding-left : 40px;
-            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            height: 50px;
+            align-items: top;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;;
             
         }
         a {
@@ -42,6 +263,8 @@
             font-size: 19px;
             font-weight: 700;
         }
+
+
         #box2 .A {
             font-size: 16px;
             margin-top : 4px;
@@ -53,7 +276,7 @@
             height : 20px;
         }
         #container > #box3 {
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
         }
         
         /* /* 3rd BOX */
@@ -147,12 +370,12 @@
             height : 100%;
             /* border : 1px solid teal;  */
             display: grid;
-            grid-template-columns:repeat(4,222px);
-            grid-template-rows: repeat(8,390px);
-            grid-gap:40px;
+            grid-template-columns:repeat(3,220px);
+            grid-gap:60px;
             overflow-y: scroll;
             padding : 10px;
         }  
+
         ::-webkit-scrollbar {
             width: 6px;
             height: 20px;
@@ -164,9 +387,10 @@
             }
          /* 3RD BOX 1ST RIGHT SMALL BOX 4TH BOX */
          .sbox2 > .sSbox4 {
-             width : 99%;
+             display:none;
+             /* width : 99%;
              border: 1px solid rgb(56, 190, 101);
-             height : 700px;
+             height : 700px; */
              
          }
         .sSbox3>div:hover{
@@ -177,6 +401,7 @@
         }
         /* 4TH BOX */
         #box4 {
+            display:none;
             width : 100%;
             height : 600px;
             border : 1px solid red;
@@ -382,11 +607,56 @@
                         -1px -1px 0 rgb(255,138,0);
                         cursor: pointer;
         }
+
+    
     </style>
 </head>
 <!-- <link rel="stylesheet" href="icofont.min.css" /> -->
 <body>
     <link rel="stylesheet" href="icofont.min.css" />
+    <div id="nav_bar">
+        <div id="nav_logo_container">
+          <img
+            class="gearBestLogo"
+            src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true"
+            alt=""
+          />
+        </div>
+        <div id="nav_wrapper">
+          <div id="nav_top">
+            <ul>
+              <li class="dropdown_app_QR"><p>Save $3 with App</p><div class="dropdown_app_qr_content"><img src="New items big/Gearbest_App_QRCODE.png" alt=""></div></li>
+              <li>Support Center</li>
+              <li>
+                Ship to
+                <img
+                  class="countryFlag"
+                  src="https://uidesign.gbtcdn.com/GB/app/2018/flag_png/um.png"
+                  alt="Brazil"
+                  title="Brazil"
+                  class="headShortcut_nalflag"
+                />/ USD
+              </li>
+              <li>Language</li>
+              <li>Country Website</li>
+            </ul>
+          </div>
+  
+          <div id="nav_main">
+            <div class="nav_search_bar">
+              <div class="nav_search_category_select">All</div>
+              <input type="text" id="nav_search_input" placeholder="iphone 13 pro max"/>
+              <button class="nav_search_button">  
+              </div>
+                  <div class="nav_bar_options">
+                      <div class="nav_sign_in">Sign In</div>
+                      <div class="nav_favorites">Favorites</div>
+                      <div class="nav_cart">Cart</div>
+                  </div>    
+          </div>
+          
+        </div>
+      </div>
     <div id="container">
         <div class="box1"></div>
         <div id="box2">
