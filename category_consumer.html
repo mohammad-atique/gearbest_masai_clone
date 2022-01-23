@@ -1053,7 +1053,7 @@
             img: "https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2021/03/17/goods_thumb_220-v1/20210317121546_6051827230125.jpg"
         },
     ]
-    var cartArr = JSON.parse(localStorage.getItem("cartItem")) || [];
+    var cartArr = JSON.parse(localStorage.getItem("cartData")) || [];
     displayData(appliancesdata);
 
     function displayData(appliancesdata) {
@@ -1107,7 +1107,7 @@
 
     function addToCart(data) {
         cartArr.push(data);
-        localStorage.setItem("cartItem", JSON.stringify(cartArr));
+        localStorage.setItem("cartData", JSON.stringify(cartArr));
         alert("Added successfully");
     }
 
