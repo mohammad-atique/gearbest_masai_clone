@@ -15,14 +15,13 @@ JavaScript, HTML5, CSS3
 
 ## Important Links
 <a href="https://gearbestclone.netlify.app/">Deployed Netlify Link</a>
-<br>
 
 <br>
 <a href="https://medium.com/@shivamviscabarca1899/my-first-ever-collaborated-project-4f0c044b9e26">Project blog</a>
 <br>
 <a href="https://drive.google.com/file/d/1NcjveBWvVv-_M1kH-RxL-PzJkVH6qS37/view?usp=sharing">Project presentation</a>
-## Collaborators
 
+## Collaborators
 <a href="https://github.com/mohammad-atique">Mohammad atique</a><br>
 <a href="https://github.com/minakshikalambe">Minakshi kalambe</a><br>
 <a href="https://github.com/jatindevnani">Jatin Devnani</a></br>
