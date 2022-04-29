@@ -35,7 +35,7 @@ Home page of the website.
 
 
 ![Category page](https://miro.medium.com/max/1400/1*0AroujETl0I5MrrazBet-A.jpeg)
-goodKart page of the website
+Category page of the website
 
 ![cart page](https://miro.medium.com/max/1400/1*8QZ6awio-cKmSmxZ6MuBuw.jpeg)
 Cart page with product Details and total amount of all the cart product.
