@@ -2,67 +2,60 @@
 
 ![Logo](https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true)
 
-# lybrate-clone
+# gearbest-clone
 
-gearbest.com is an innovative online doctor database gives you access to over 150,000 highly trained medical experts. So you can ask a doctor anything you want, simple with a touch of a finger.
+gearbest.com is an innovative online Chinese company providing wholesale electronics, appliances, apparel, and accessories.
 <br>
-GoodKart is Lybrate’s endeavour to deliver the best of the best Health care products at your doorstep. GoodKart brings to you a vibrant mix of health products, both from reputed international brands to local Indian brands.
 
-I worked on this project during unit-4 construct week at Masai School with the help of other three team members.
+I worked on this project during unit-2 construct week at Masai School with the help of other three team members.
 
 ## Tech stack used in this project
 
-Javascript, HTML, CSS , MongoDB , Postman , Node.js
+JavaScript, HTML5, CSS3
 
 ## Important Links
-<a href="http://librate.netlify.app/">Netlify</a>
+<a href="https://gearbestclone.netlify.app/">Deployed Netlify Link</a>
 <br>
-<a href="https://github.com/mohammad-atique/lybratebackend">Backend repository</a>
+
 <br>
-<a href="https://medium.com/@minakshikalambe10/fourth-unit-project-lybrate-com-8ba50892ada8">Project blog</a>
+<a href="https://medium.com/@shivamviscabarca1899/my-first-ever-collaborated-project-4f0c044b9e26">Project blog</a>
 <br>
-<a href="https://drive.google.com/file/d/1ttbF-b5iQDKb68cnqOUwn0GrYHLBHW5P/view?usp=sharing
-">Project presentation</a>
+<a href="https://drive.google.com/file/d/1NcjveBWvVv-_M1kH-RxL-PzJkVH6qS37/view?usp=sharing">Project presentation</a>
 ## Collaborators
 
 <a href="https://github.com/mohammad-atique">Mohammad atique</a><br>
 <a href="https://github.com/minakshikalambe">Minakshi kalambe</a><br>
-<a href="https://github.com/Soumyaranjankalia">Soumya ranjan kalia</a>
+<a href="https://github.com/jatindevnani">Jatin Devnani</a></br>
+<a href="https://github.com/iamphenomenal2822">Shivam Swami</a></br>
+<a href="https://github.com/Vivek-Badole">Vivek Bhadole</a>
+
 
 ## Screenshots
 
-![Home page](https://i.imgur.com/0zq4yBA.png)
+![Home page](https://miro.medium.com/max/1400/1*v9XdJI3mgB4DBokV-GzOmw.jpeg)
 Home page of the website.
 
-![login page](https://i.imgur.com/MpDPrEz.png)
-Login page of the website.
 
-![goodKart page](https://i.imgur.com/XmJKkX9.png)
+![Category page](https://miro.medium.com/max/1400/1*0AroujETl0I5MrrazBet-A.jpeg)
 goodKart page of the website
 
-![cart page](https://i.imgur.com/AEsOSG3.png)
+![cart page](https://miro.medium.com/max/1400/1*8QZ6awio-cKmSmxZ6MuBuw.jpeg)
 Cart page with product Details and total amount of all the cart product.
 
-![empty cart page](https://i.imgur.com/cGDljVY.png)
-Empty cart page with more shopping option.
 
-![address page](https://i.imgur.com/GSiuheW.png)
-Add delivery address page
-
-![checkout page](https://i.imgur.com/ErWPKE5.png)
+![checkout page](https://miro.medium.com/max/1400/1*i5m_fW0CnWJwzPsqnO4S2A.jpeg)
 Checkout page with total amount of all the cart products and transaction id.
 
 ## Features
 
-- OTP based payment process.
-- Address page.
-- Sorting product feature based on price and popularity.
-- Cart page/Empty cart page.
-- User get a thankyou mail after successfull payment.
+- Responsive Home Page
+- Complete user flow from adding item to cart to success page
+- Login/ Signup page with username will be visible on all page headers when user will Login
+- Multiple filter and sorting options
 
 ## Area of Resposibility
 
 - Integrated all the pages successfully,
-- Developed the Payment page,
+- Developed the Payment page, Cart Page, Favorite Page, Login/Signup Page
 - Built Add to cart functionality, product remove button ,
-- Built OTP based payment process.
+
