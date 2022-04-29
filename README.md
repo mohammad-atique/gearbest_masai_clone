@@ -15,7 +15,6 @@ JavaScript, HTML5, CSS3
 
 ## Important Links
 <a href="https://gearbestclone.netlify.app/">Deployed Netlify Link</a>
-
 <br>
 <a href="https://medium.com/@shivamviscabarca1899/my-first-ever-collaborated-project-4f0c044b9e26">Project blog</a>
 <br>
