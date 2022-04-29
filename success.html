@@ -112,7 +112,7 @@
         let registeredUsers = JSON.parse(localStorage.getItem("userDataBase"));
         registeredUsers[indexOfUserSignedIn].userCart = [];
         localStorage.setItem("userDataBase", JSON.stringify(registeredUsers));
-        window.location.href = "home_page.html"
+        window.location.href = "index.html"
     })
     var userAdd=JSON.parse(localStorage.getItem("userAddress"));
 console.log(userAdd)
