@@ -1,10 +1,10 @@
-# lybrateFrontend
+# gearbest_masai_clone
 
-![Logo](gearBestIcon.jpg)
+![Logo](https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true)
 
 # lybrate-clone
 
-Lybrate.com innovative online doctor database gives you access to over 150,000 highly trained medical experts. So you can ask a doctor anything you want, simple with a touch of a finger.
+gearbest.com is an innovative online doctor database gives you access to over 150,000 highly trained medical experts. So you can ask a doctor anything you want, simple with a touch of a finger.
 <br>
 GoodKart is Lybrate’s endeavour to deliver the best of the best Health care products at your doorstep. GoodKart brings to you a vibrant mix of health products, both from reputed international brands to local Indian brands.
 
