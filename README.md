@@ -7,7 +7,7 @@
 gearbest.com is an innovative online Chinese company providing wholesale electronics, appliances, apparel, and accessories.
 <br>
 
-I worked on this project during unit-2 construct week at Masai School with the help of other three team members.
+I worked on this project during unit-2 construct week at Masai School with the help of other four team members.
 
 ## Tech stack used in this project
 
